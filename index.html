@@ -1,0 +1,65 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Grid Game with Hints</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #eefedc;
+        }
+        #gameContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #00003b;
+            border-radius: 20px;
+        }
+        #gridContainer {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-gap: 10px;
+            margin-bottom: 20px;
+        
+        }
+        .gridItem {
+            width: 100px;
+            height: 100px;
+            /* border: 2px solid #ccc; */
+            cursor: pointer;
+        }
+        #hint {
+            margin-bottom: 20px;
+            font-size: 19.5px;
+            color: #ffffff;
+            
+        }
+        #restartButton {
+            padding: 10px 20px;
+            background-color: #ff2554;
+            color: white;
+         border: 0px;
+         border-radius: 10px;
+     
+
+        }
+    </style>
+</head>
+<body>
+    <div id="gameContainer">
+        <br>
+        <div id="hint">Hint: </div>
+        <div id="gridContainer"></div>
+        <button id="restartButton">Restart Game</button>
+        <br>
+    </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
